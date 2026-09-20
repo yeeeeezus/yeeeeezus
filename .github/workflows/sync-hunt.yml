@@ -1,0 +1,34 @@
+name: sync hunt table
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: regenerate hunt table from bounty-log ledger
+        run: python scripts/sync_hunt.py
+
+      - name: commit if changed
+        run: |
+          git config user.name "ye[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "chore: sync hunt table from bounty-log ledger"
+            git push
+          fi
