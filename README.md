@@ -19,6 +19,8 @@
 **[📋 CI-verified bounty ledger → bounty-log](https://github.com/yeeeeezus/bounty-log)**
 ` · `
 **[🧰 ye://toolkit — live → yeeeeezus.github.io/ye-toolkit](https://yeeeeezus.github.io/ye-toolkit/)**
+` · `
+**[📡 bounty-radar — live → yeeeeezus.github.io/bounty-radar](https://yeeeeezus.github.io/bounty-radar/)**
 
 </div>
 
