@@ -83,13 +83,14 @@ def main():
     with open(README_PATH, encoding="utf-8") as fh:
         readme = fh.read()
 
-    pattern = re.compile(r"(<!--HUNT:START-->\n)(.*?)(\n<!--HUNT:END-->)", re.S)
+    pattern = re.compile(r"(<!--HUNT:START-->\n?)(.*?)(\n?<!--HUNT:END-->)", re.S)
     if not pattern.search(readme):
         print("HUNT markers missing in README; nothing to do", file=sys.stderr)
         return 0
 
     new_readme = pattern.sub(
-        lambda m: m.group(1) + block + m.group(3), readme, count=1
+        lambda m: m.group(1) + block + "\n<!--HUNT:END-->",
+        readme, count=1
     )
     if new_readme == readme:
         print("no changes")
