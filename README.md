@@ -17,6 +17,8 @@
 **[⌨ portfolio terminal → yeeeeezus.github.io](https://yeeeeezus.github.io)**
 ` · `
 **[📋 CI-verified bounty ledger → bounty-log](https://github.com/yeeeeezus/bounty-log)**
+` · `
+**[🧰 ye://toolkit — live → yeeeeezus.github.io/ye-toolkit](https://yeeeeezus.github.io/ye-toolkit/)**
 
 </div>
 
