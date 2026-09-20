@@ -102,6 +102,11 @@
 ### `tail -f bounty-log` <sub><sup>auto-synced from the CI-verified ledger</sup></sub>
 
 <!--HUNT:START-->
+| repo | issue | PR | status | est |
+|------|-------|----|--------|-----|
+| [stakwork/sphinx-tribes-frontend](https://github.com/stakwork/sphinx-tribes-frontend) | [#586](https://github.com/stakwork/sphinx-tribes-frontend/issues/586) | [#1624](https://github.com/stakwork/sphinx-tribes-frontend/pull/1624) | 🟢 open | ~$80 |
+
+`1 active hunt(s) · ~$80 est pipeline · $0 verified paid`
 <!--HUNT:END-->
 
 📋 **full ledger, CI-validated, estimates never masquerade as income:** [yeeeeezus/bounty-log](https://github.com/yeeeeezus/bounty-log)
